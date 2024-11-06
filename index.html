@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="appdate">
+      <div class="butty">
+        <p class="disp">0</p>
+        <table>
+          <tr>
+            <td
+              colspan="2"
+              class="ac"
+              onclick="
+          ac();
+          "
+            >
+              AC
+            </td>
+            <td
+              class="op"
+              onclick="
+          calculation +='/';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              /
+            </td>
+            <td
+              class="op"
+              onclick="
+          calculation +='*';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              *
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="nu"
+              onclick="
+          calculation +='1';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              1
+            </td>
+            <td
+              class="nu"
+              onclick="
+          calculation +='2';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              2
+            </td>
+            <td
+              class="nu"
+              onclick="
+          calculation +='3';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              3
+            </td>
+            <td
+              class="op"
+              onclick="
+          calculation +='+';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              +
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="nu"
+              onclick="
+          calculation +='4';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              4
+            </td>
+            <td
+              class="nu"
+              onclick="
+          calculation +='5';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              5
+            </td>
+            <td
+              class="nu"
+              onclick="
+          calculation +='6';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              6
+            </td>
+            <td
+              class="op"
+              onclick="
+          calculation +='-';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              -
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="nu"
+              onclick="
+          calculation +='7';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              7
+            </td>
+            <td
+              class="nu"
+              onclick="
+          calculation +='8';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              8
+            </td>
+            <td
+              class="nu"
+              onclick="
+          calculation +='9';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              9
+            </td>
+            <td
+              rowspan="2"
+              class="equal"
+              onclick="
+          calculation = eval(calculation);
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              =
+            </td>
+          </tr>
+          <tr>
+            <td
+              colspan="2"
+              class="nu"
+              onclick="
+          calculation +='0';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              0
+            </td>
+            <td
+              class="nu"
+              onclick="
+          calculation +='.';
+          document.querySelector('.disp').innerHTML = calculation;
+          "
+            >
+              .
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
